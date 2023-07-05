@@ -107,7 +107,30 @@ button:focus{
     outline: none;
 }
 
-@media (max-width: 1280px) {
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    border: solid hsl(0, 100%, 74%);
+    background: url(./icon-error.svg) no-repeat;
+    background-position: 95% 50%;
+}
+
+.error-text {
+    font-size: 12px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);
+}
+
+.success {
+    border: solid hsl(154, 59%, 51%);
+}
+
+@media (max-width: 768px) {
     main {
         padding: 40px 20px;
         width: 100%;
